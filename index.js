@@ -10,7 +10,7 @@ module.exports = (app) => {
     const issueComment = context.issue({
       body: "Thanks for opening this issue!",
     });
-    return context.octokit.issues.createComment(issueComment);
+    return console.log('Issue opened!');
   });
 
   // For more information on building apps:
