@@ -10,7 +10,7 @@ const config = [
     {
         REPO: "bringbackdada-front",
         SETTINGS: {
-            BRANCH: "master",
+            BRANCH: "main",
             PATH: "/var/www/bringbackdada.com/bringbackdada-front",
             EXEC: "git pull && npm run build && pm2 restart ecosystem.config.js"
         }
