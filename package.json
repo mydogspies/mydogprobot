@@ -16,6 +16,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "luxon": "^1.26.0",
     "probot": "^11.0.1"
   },
   "devDependencies": {
