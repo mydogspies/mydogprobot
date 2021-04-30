@@ -1,6 +1,6 @@
 # mydogprobot
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that Github syncing for Mydogspies projects
+> A GitHub App built with [Probot](https://github.com/probot/probot) for syncing push events between Github and remote repo.
 
 ## Setup
 
@@ -10,16 +10,6 @@ npm install
 
 # Run the bot
 npm start
-```
-
-## Docker
-
-```sh
-# 1. Build container
-docker build -t mydogprobot .
-
-# 2. Start container
-docker run -e APP_ID=<app-id> -e PRIVATE_KEY=<pem-value> mydogprobot
 ```
 
 ## Contributing
