@@ -1,7 +1,7 @@
 module.exports = {
     apps : [{
         name: "mydogprobot",
-        script: "probot run ./index.js",
+        script: "npm start",
         env: {
             NODE_ENV: "production",
         }
