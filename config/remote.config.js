@@ -12,7 +12,7 @@ const config = [
         SETTINGS: {
             BRANCH: "master",
             PATH: "/var/www/bringbackdada.com/bringbackdada-front",
-            EXEC: "npm run build && pm2 restart ecosystem.config.js"
+            EXEC: "git pull && npm run build && pm2 restart ecosystem.config.js"
         }
     }
 ];
