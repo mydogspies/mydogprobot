@@ -23,9 +23,7 @@ module.exports = (app) => {
 
     // check config and do actions against existing entries
     config.forEach(site => {
-      console.log(site.REPO);
       if(site.REPO === repo && branch === 'refs/heads/' + site.SETTINGS.BRANCH) {
-
         exec('cd ' + site.SETTINGS.PATH + ' && ' + site.SETTINGS.EXEC);
         app.log.info(getDateTime() + ' -> PUSH: ' + repo + ' [' + branch + '] pushed to remote');
       }
@@ -33,9 +31,9 @@ module.exports = (app) => {
 
   });
 
-  app.onAny(async (context) => {
-    context.log.info({ event: context.name, action: context.payload.action });
-  });
+  // app.onAny(async (context) => {
+  //   context.log.info({ event: context.name, action: context.payload.action });
+  // });
 
 };
 
