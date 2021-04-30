@@ -1,6 +1,6 @@
 {
   "name": "mydogprobot",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
   "description": "Github syncing for Mydogspies projects",
   "author": "mydogspies <mydogspies@zoho.com>",
