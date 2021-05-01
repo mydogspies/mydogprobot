@@ -14,6 +14,14 @@ const config = [
             PATH: "/var/www/bringbackdada.com/bringbackdada-front",
             EXEC: "git pull && npm run build && pm2 restart ecosystem.config.js"
         }
+    },
+    {
+        REPO: "mydogspies-back",
+        SETTINGS: {
+            BRANCH: "master",
+            PATH: "/var/www/mydogspies.com/mydogspies-back",
+            EXEC: "git pull && npm install && pm2 restart ecosystem.config.js"
+        }
     }
 ];
 
