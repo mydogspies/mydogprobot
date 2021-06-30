@@ -22,7 +22,15 @@ const config = [
             PATH: "/var/www/mydogspies.com/mydogspies-back",
             EXEC: "git pull && npm install && pm2 restart ecosystem.config.js"
         }
-    }
+    },
+    {
+        REPO: "mydogspies-front",
+        SETTINGS: {
+            BRANCH: "main",
+            PATH: "/var/www/mydogspies.com/mydogspies-front",
+            EXEC: "git pull && npm install && npm run build && pm2 restart ecosystem.config.js"
+        }
+    },
 ];
 
 module.exports = config;
